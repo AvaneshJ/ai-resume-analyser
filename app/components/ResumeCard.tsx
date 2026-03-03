@@ -35,7 +35,7 @@ const ResumeCard = ({ resume }: { resume: Resume }) => {
             <h2 className="text-black! font-bold">Resume</h2>
           )}
         </div>
-        <div className="flex-shrink-0">
+        <div className="shrink-0">
           <ScoreCircle score={resume.feedback.overallScore} />
         </div>
       </div>
@@ -45,7 +45,7 @@ const ResumeCard = ({ resume }: { resume: Resume }) => {
             <img
               src={resumeUrl}
               alt="resume"
-              className="w-full h-[350px] max-sm:h-[200px] object-cover object-top"
+              className="w-full h-87.5 max-sm:h-50 object-cover object-top"
             />
           </div>
         </div>
