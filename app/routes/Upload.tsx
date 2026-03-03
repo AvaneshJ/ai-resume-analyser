@@ -86,9 +86,8 @@ const Upload = () => {
 
       setStatusText("Analysis complete, redirecting...");
 
-      // TRICK: Using console.warn instead of console.log.
-      // This forces the log to be yellow, bypassing most "Hide Info" console filters!
       console.warn("SUCCESS! HERE IS THE DATA:", data);
+      navigate(`/resume/${uuid}`);
     } catch (error) {
       console.error("Analysis or Parsing Error:", error);
       setStatusText("Error: Something went wrong. Check console.");
