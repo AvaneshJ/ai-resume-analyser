@@ -10,7 +10,7 @@ const ResumeCard = ({ resume }: { resume: Resume }) => {
     >
       <div className="resume-card-header">
         <div className="flex flex-col gap-2">
-          <h2 className="!text-black font-bold break-words">
+          <h2 className="text-black font-bold break-words">
             {resume.companyName}
           </h2>
           <h3 className="text-lg text-gray-500">{resume.jobTitle}</h3>
